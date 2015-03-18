@@ -1,0 +1,155 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url('img/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #274D8A;
+    border-bottom: 1px solid #333;
+    box-shadow: 2px 2px 40px #000;
+    z-index: 1000;
+}
+
+footer {
+    width: 100%;
+    height: 75px;
+    background-color: #274D8A;
+    border-top: 1px solid #333;
+    box-shadow: 2px -2px 40px #000;
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
+}
+
+header div.logo {
+    float: left;
+}
+
+header nav {
+    float: left;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header nav #main-nav > li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 38px 38px 42px 38px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+li.top_level {
+    position: relative;
+}
+
+.dropdown_menu {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    background-color: darkblue;
+    box-shadow: 0;
+    transition: opacity .1s ease-in-out;
+}
+
+.top_level:hover .dropdown_menu {
+    display: block;
+    opacity: 1;
+    box-shadow: 2px 2px white;
+    width: 100%;
+    top: 98px;
+}
+.events .event img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.events .event:hover img{
+    transform: scale(1.5);
+}
+
+
+/*Content*/
+
+#content {
+    padding-top: 150px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+#slider-1 {
+    height: 350px;
+    box-shadow: 2px 2px 15px 5px black;
+}
+
+.events .event {
+    display: inline-block;
+    margin-right: 25px;
+    box-shadow: 2px 2px 15px 5px black;
+}
+
+.events .event.last {
+    margin-right: 0;
+}
+
+
+.homepage-news {
+    overflow: auto;
+}
+
+.upcoming_news .news{
+    float: left;
+    width: 50%
+}
+
+.upcoming_news .right {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.upcoming_news .right h3 {
+    margin-top: 0;
+}
+
+
+
+#footer-banner {
+    position: relative;
+}
+
+.smaller_images {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.smaller_images img {
+    border-radius: 50px;
+}
+
